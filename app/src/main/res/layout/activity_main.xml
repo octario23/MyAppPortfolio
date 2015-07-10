@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity"
+                android:background="#ffdfeaf1">
+
+    <TextView
+        android:text="@string/section_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"/>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/spotify_app"
+            android:id="@+id/button"
+            style="@style/CustomButtom"
+            android:background="@drawable/button_selector"
+            android:onClick="onItemClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scores_app"
+            android:id="@+id/button2"
+            style="@style/CustomButtom"
+            android:background="@drawable/button_selector"
+            android:onClick="onItemClick"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/library_app"
+            android:id="@+id/button3"
+            style="@style/CustomButtom"
+            android:background="@drawable/button_selector"
+            android:onClick="onItemClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/built_app"
+            android:id="@+id/button4"
+            style="@style/CustomButtom"
+            android:background="@drawable/button_selector"
+            android:onClick="onItemClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bacon_reader_app"
+            android:id="@+id/button5"
+            style="@style/CustomButtom"
+            android:background="@drawable/button_selector"
+            android:onClick="onItemClick"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/capstone_app"
+            android:id="@+id/button6"
+            android:background="@drawable/capstone_selector"
+            style="@style/CapstoneButtom"
+            android:onClick="onItemClick"/>
+    </LinearLayout>
+
+</RelativeLayout>
